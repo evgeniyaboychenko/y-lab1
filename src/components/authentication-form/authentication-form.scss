@@ -18,98 +18,25 @@
 }
 
 .authentication-form h1{
-	 font-size: 24px;
-font-style: normal;
-font-weight: 400;
-text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
 }
 
-.field {
-    display: grid;
-	grid-template-columns: 1fr;
-	// gap:10px;
-	position: relative;
-}
-
-.field__label {
-	font-weight: 500;
-	font-size: 14px;
-    // display: grid;
-	// grid-template-columns: 1fr;
-	// gap:10px;
-	margin-bottom: 5px;
-}
-
-.field input{
+.authentication-form__message {
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
 	padding: 10px;
+	font-size: 16px;
+	background-color: rgb(108, 245, 170);
 	border-radius: 8px;
-	box-shadow: none;
-	border: 1px solid #a7a7a7;
-	outline: none;
-}
-	
-	
-.field	input:hover {
-	border-color: #a7a7a7;
+	color: green;
 }
 
-.field	input:focus {
-	border-color: #0063e6;
-}
-
-.field__error {
+.authentication-form__message--bc-red {
+	background-color: rgb(252, 180, 180);
 	color: red;
-	font-size: 12px;
-	text-align: right;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	transform: translate3d(0, 20px, 0);
-
-}
-
-.authentication-form button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #0063e6;
-    border-radius: 8px;
-    transition: color 0.3s ease-in-out, background-color  0.3s ease-in-out, border-color  0.3s ease-in-out;
-	width: 100%;
-	color: white;
-	border: none;
-	
-
-
-	@media (hover: hover) {
-		&:hover,
-		&:focus {
-			background-color: #1a78f6;
-			text-decoration: none;
-		}
-
-		&:focus-visible {
-			outline: 3px solid #42a0da;
-   			outline-offset: 3px;
-		}
-
-		&:active {
-			background-color: #1a78f6;
-		}
-
-		&:disabled {
-			background-color: #f0f0f0;
-			color: #c8c8c8;
-			cursor: not-allowed;
-		}
-	}
-
-	&:disabled {
-		background-color: #f0f0f0;
-			color: #c8c8c8;
-			cursor: not-allowed;
-	}
 }

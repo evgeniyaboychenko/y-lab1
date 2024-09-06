@@ -14,6 +14,12 @@ class FieldStore {
 		makeAutoObservable(this);
 	}
 
+	reset = () => {
+		this.inputField.isValid = false;
+		this.inputField.value = '';
+		this.inputField.error = '';
+	}
+
 	validate = (value: string, type: string ) => {
 		switch (type) {
 			case FieldTypes.EMAIL: {

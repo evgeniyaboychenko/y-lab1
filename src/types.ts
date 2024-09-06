@@ -20,7 +20,7 @@ export interface InputField {
 	value: string,
 }
 
-export interface FormData {
+export interface LoginData {
 	email: string,
 	password: string,
 }
@@ -29,4 +29,9 @@ export interface MockData {
 	id: string,
 	email: string,
 	password: string,
+}
+
+export interface Result {
+    status: 0 | 1| null ;
+    statusText: string;
 }
